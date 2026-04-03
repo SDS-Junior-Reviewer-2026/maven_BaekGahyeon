@@ -23,8 +23,8 @@ jobs:
     - name: Send Email with SES
       run: |
         aws ses send-email \
-          --from "goginala@naver.com"\
-          --destination "ToAddresses=goginala@naver.com" \
-          --message "Subject={Data=테스트2 메일 전송},Body={Text={Data=안녕? 이렇게 하면 어떻게 출력될까}}"
+          --from "mincoding@naver.com"\
+          --destination "ToAddresses=sejin.choi@mincoding.co.kr" \
+          --message "Subject={Data=백가현},Body={Text={Data=숙제}}"
       
 

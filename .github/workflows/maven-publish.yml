@@ -22,7 +22,7 @@ jobs:
 
     - name: Send Email with SES
       run: 
-        aws ses send-mail \
+        aws ses send-email \
           --from "mincoding@naver.com"\
           --destination "ToAddresses=goginala@naver.com" \
           --message "Subject={Data=테스트 메일 전송},Body={Text={Data=안녕? KFC from GitHub Actions}}"

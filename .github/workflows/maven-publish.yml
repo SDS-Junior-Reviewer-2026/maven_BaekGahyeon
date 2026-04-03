@@ -21,7 +21,7 @@ jobs:
         aws-region: ap-northeast-2
 
     - name: Send Email with SES
-      run: 
+      run: |
         aws ses send-email \
           --from "mincoding@naver.com"\
           --destination "ToAddresses=goginala@naver.com" \
